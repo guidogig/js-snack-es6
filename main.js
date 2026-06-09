@@ -1,3 +1,5 @@
+
+// SNACK 1
 const makeBike = (nome, peso) => ({ nome, peso });
 
 const garage = [
@@ -8,12 +10,12 @@ const garage = [
 
 const trovaLeggera = (elenco) => {
     let piuLeggera = elenco[0];
-    console.log('Prima iterazione piu leggera: ', piuLeggera);
+    //console.log('Prima iterazione piu leggera: ', piuLeggera);
     for (let i = 0; i < elenco.length; i++) {
-        console.log('elenco[i] = ', elenco[i]);
+        //console.log('elenco[i] = ', elenco[i]);
         if (elenco[i].peso < piuLeggera.peso) {
             piuLeggera = elenco[i];
-            console.log('piuLeggera = ', piuLeggera);
+            //console.log('piuLeggera = ', piuLeggera);
         }
     }
     return(piuLeggera);
