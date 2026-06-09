@@ -2,6 +2,15 @@
 // SNACK 1
 const makeBike = (nome, peso) => ({ nome, peso });
 
+// versione verbosa della factory function senza shorthand che fa la stessa cosa
+const makeBike1 = (nome, peso) => {
+    const bike = {
+        nome: nome,
+        peso: peso
+    };
+    return(bike);
+}
+
 const garage = [
     makeBike('Trek Émonda SLR 9', 6.6),
     makeBike('Specialized Tarmac SL7', 6.1),
